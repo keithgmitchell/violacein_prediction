@@ -76,6 +76,7 @@ First we need to do some general set up.
     ```
     
 8. Run build_and_test_hmms.sh, this will also test the query sequences against the non_producers and known producers 
+    8. Run build_and_test_hmms.sh, this will also test the query sequences against the non_producers and known producers 
     ```
     ./../matches_output/build_and_test.hmms.sh
     ```
@@ -84,7 +85,7 @@ First we need to do some general set up.
     ```
     python prob_producer.py -i hmm_matches_VioA_0.00000001.m8.sfasta.results.final,hmm_matches_VioB_0.00000001.m8.sfasta.results.final,hmm_matches_VioC_0.00000001.m8.sfasta.results.final,hmm_matches_VioD_0.00000001.m8.sfasta.results.final,hmm_matches_VioE_0.00000001.m8.sfasta.results.final
     ```
-    
+    Small e_value means high chance of that gene... therefore 1-e-value for all genes to calc intersection of them all occuring
     ```
     Cviolaceum_12472_GCF_000007705.1 1.0
     jliv_NFR18_GCF_900119665.1 1.0
