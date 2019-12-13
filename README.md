@@ -114,7 +114,10 @@ First we need to do some general set up.
     for i in `cat ../notes/hmm_seqs.txt`; do cat testing.txt.fasta | grep $i -A 1 | head -2; done > hmm_16s_seqs.fasta
     ```    
 10. Build trees for the 16s and genes. /share/biocore/keith/eisenlab/trees/
+
     ```
+    module load anaconda3
+    source activate ~/synapse
     for i in *.sfasta.msa; do FastTree $i > "${i}.tre"; done
     ```
     
